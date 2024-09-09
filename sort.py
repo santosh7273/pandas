@@ -23,3 +23,7 @@ print(pd2)
 print(pd2['roll_no'].mean())
 pd10=pd.Series([1,2,3,2,12,3,4])
 print(pd10.value_counts())
+print(pd2)
+fil=pd2['roll_no']>=2
+pd2.drop(index=fil.index,inplace=True)
+print(pd2)
